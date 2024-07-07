@@ -7451,8 +7451,8 @@ end)
 end
 ----------------------------------------------------------------------------------------------------------------------------------------------
 Fluent:Notify({
-    Title = "Fai Fao Hub",
+    Title = "Nogrus hub",
     Content = "The script has been loaded.",
     Durtion = 3
 })
-warn("Fai Fao Hub Loading Completed !!")
+warn("Nogrus hub Loading Completed !!")
