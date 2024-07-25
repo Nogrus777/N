@@ -1,24 +1,28 @@
 local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
 
-----------------------------------------------------------------------------------------------------------------------------------------------
+-- Criação da Janela
 local Window = redzlib:MakeWindow({
-  Title = "Test",
-  SubTitle = "hello",
-  SaveFolder = "Redz Config"
+    Title = "Nogrus Hub | Spider",
+    SubTitle = "Version 1.0",
+    SaveFolder = "Redz Config"
 })
+
+-- Criação das Abas
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "home" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "settings" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "box" }),
-    Teleport = Window:AddTab({ Title = "Island", Icon = "palmtree" }),
-    Fruit = Window:AddTab({ Title = "Fruit", Icon = "cherry" }),
-    Raid = Window:AddTab({ Title = "Raid", Icon = "swords" }),
-    Race = Window:AddTab({ Title = "Race V4", Icon = "chevrons-right" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "shopping-cart" }),
-	Misc = Window:AddTab({ Title = "Misc", Icon = "list-plus" }),
-    Hop = Window:AddTab({ Title = "Hop", Icon = "wifi" }),
+    Main = Window:MakeTab({"Main", "Main Functions"}),
+    Settings = Window:MakeTab({"Settings", "Configuration"}),
+    Stats = Window:MakeTab({"Stats", "Player Stats"}),
+    Player = Window:MakeTab({"Player", "Player Tools"}),
+    Teleport = Window:MakeTab({"Teleport", "Item Teleport"}),
+    Fruit = Window:MakeTab({"Fruit", "Fruit Options"}),
+    Raid = Window:MakeTab({"Raid", "Raid Settings"}),
+    Race = Window:MakeTab({"Race", "Race Settings"}),
+    Shop = Window:MakeTab({"Shop", "Shop Options"}),
+    Misc = Window:MakeTab({"Misc", "Miscellaneous"}),
+    Hop = Window:MakeTab({"Hop", "Server Hop"})
 }
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------
 --// Place Id Check
 local id = game.PlaceId
