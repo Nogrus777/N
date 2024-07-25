@@ -1,15 +1,10 @@
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RedzLibV5/main/Source.Lua"))()
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
-local Window = Fluent:CreateWindow({
-    Title = "Nogrus hub | Blox Fruits",
-    SubTitle = "Version 3.1",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(500, 320),
-    Acrylic = true,
-    Theme = "Darker",
-    MinimizeKey = Enum.KeyCode.End
+local Window = redzlib:MakeWindow({
+  Title = "Test",
+  SubTitle = "hello",
+  SaveFolder = "Redz Config"
 })
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "home" }),
@@ -24,8 +19,6 @@ local Tabs = {
 	Misc = Window:AddTab({ Title = "Misc", Icon = "list-plus" }),
     Hop = Window:AddTab({ Title = "Hop", Icon = "wifi" }),
 }
-local Options = Fluent.Options
-do
 --------------------------------------------------------------------------------------------------------------------------------------------
 --// Place Id Check
 local id = game.PlaceId
